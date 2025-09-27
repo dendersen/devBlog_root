@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dendersen.dk</title>
+    <link rel="stylesheet" href="B1.css"/>
+  </head>
+  <body>
+    <p>site: <a href="https://www.dendersen.dk">dendersen.dk</a></p>
+    <p>this project was started BEFORE the blog, future updates follow but everything before 27/09 2025 is missing</p>
+    
+
+    <h1>the begining</h1>
+    <p>27/09 2025</p>
+    <p>at this point the goal was simply to improve ease of upload</p>
+    <p>to do this i made a CSV file containing all the pictures and the methode for displaying</p>
+    <p>this CSV file is read in javascript which adds the picture to the html page in runtime, making it easy to add new pictures</p>
+    <p>the CSV file is located at: <a href="https://www.dendersen.dk/pictureList.csv">pictures.csv</a></p>
+    <p>an example of each of the 3 styles can be found in the table below</p>
+    <table>
+      <tr>
+        <th>style</th>
+        <th>picture link</th>
+        <th>alternate picture</th>
+        <th>name of picture</th>
+      </tr>
+      <tr>
+        <th>normal</th>
+        <th>destination.JPG</th>
+        <th></th>
+        <th>destination</th>
+      </tr>
+      <tr>
+        <th>double</th>
+        <th>hidden beauty.tif</th>
+        <th>hidden beauty.JPG</th>
+        <th>hidden beauty</th>
+      </tr>
+      <tr>
+        <th>featured</th>
+        <th>planets.JPG</th>
+        <th>planetsAlt.JPG</th>
+        <th>planets</th>
+      </tr>
+    </table>
+    <p>when it comes to assembling the csv file into the website, i created a script to assemble the document details that are identical to the old version of the html, this way the website doesn't change but the updat is much simpler.</p>
+    <p>this uses the fetch function to read line by line without needing the website to finish loading first using async</p>
+  </body>
+</html>
