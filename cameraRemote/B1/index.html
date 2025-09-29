@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../../head.js"></script>
     <title>Camera Remote</title>
   </head>
   <body>
     <p>in planning we start by looking into what equipment is already laying around, i already have an arduino nano not being used, and an OLED screen (with i2c) used for an old school assignment. using these i plan to first make the user interface, of course there will be no way of editing the information at the start so it will only be displaying data and possibly turning on an LED for the given amount of time</p>
     <p>when i have that working i plan to get a knob to alow me to change the values without needing to recompile the program each time</p>
     <p>finally to interact with the camera i will need to short the to contact on the aux jack connected to the camera, to do that i will need a digital switch, the type of which i have yet to decide on, but i will need to be active for a long period with using large  amounts of energy, lastly it must be able to handle the voltage at which the camera is running at, which is currently unknown to me as i haven't measured it</p>
+    <br>
+    <div class="requirements">
+      development of the remote will happen using a few different tools
+      <ul>
+        <li>
+          <h3>Scheme It by DigiKey</h3>
+          <a href="https://www.digikey.dk/en/schemeit">link</a><br>
+          this is a free online tool for making schematics, it has a large library of components and is easy to use<br>
+          it also has integrated features for making a BOM and ordering the components<br>
+          this is a tool i have used before and am familiar with, though i am in the process of switching to fusion 360 for this part, though their component library still feels somewhat laking in comparison
+        </li>
+        <li>
+          <h3>microchip studio by microchip</h3>
+          <a href="https://www.microchip.com/en-us/tools-resources/develop/microchip-studio">link</a><br>
+          this is the IDE i will be using for programming the arduino, it is made by microchip and is free to use<br>
+          it supports most, if not all, AVR micro controllers which is what most arduinos are based on<br>
+          i have used this IDE before and am familiar with it, though i would prefer using most of the other IDE and editors i know, but this one simply has a great integration with AVR ccontrollers that you don't find anywhere else.<br>
+        </li>
+        <li>
+          <h3>DTU Ballerup component library</h3>
+          here i will attempt to find as many of the necessary components as possible, this is a library of components that DTU Ballerup has made available for use by all students both for study relevant projects and personal projects<br>
+          while they mostly carry passive components, they do have a few active components as well, they also carry methods for getting larger/more expensive components, tho i don't plan to use that in this project<br>
+        </li>
+      </ul>
+    </div>
+    <p>
+      all code will be uploaded to my personal github once development starts<br>
+      at which point it will be linked on my site <a href="../">here</a>
+    </p>
   </body>
 </html>

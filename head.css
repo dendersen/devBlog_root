@@ -3,3 +3,7 @@ table, th, td {
         padding: 3px;
         border-collapse: collapse;
       }
+
+div.requirements {
+  text-align: left;
+}
